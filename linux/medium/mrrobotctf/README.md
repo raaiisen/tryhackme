@@ -65,7 +65,6 @@ john md5.hash --wordlist=downloads/fsocity.dic --format=Raw-MD5
 -   create php revershell
     -   ready
 -   check home directories
-    -   
 -   crack password found using john
 -   change shell to interactive using python
 -   change to another user using password found
