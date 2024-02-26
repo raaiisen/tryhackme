@@ -3,8 +3,8 @@
 ## NMAP
 ```bash
 mkdir -p scans/nmap
-nmap -v -sC -sV -oN nmap/initial $IP
-nmap -v -p- -oN nmap/all_ports $IP
+nmap -v -sC -sV -oN scans/nmap/initial $IP
+nmap -v -p- -oN scans/nmap/all_ports $IP
 ```
 
 

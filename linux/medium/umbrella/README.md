@@ -1,0 +1,12 @@
+# Signature
+- Network port scanning
+    - Website on port 8080, Docker registry HTTP API, MySQL
+- Docker registry HTTP API
+    - Using docker registry API (https://docker-docs.uclv.cu/registry/spec/api/)
+    - contained data with SQL credentials
+- MySQL contained user lists with passwords
+    - User password hash
+- Logging into the website
+    - Numerical input validation failed and showed function eval() used
+    - Exploiting function eval() to execute reverse shell
+- Docker runs as root, copy /bin/bash into volume mounted and change permissions to all
