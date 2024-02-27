@@ -10,3 +10,4 @@
     - Numerical input validation failed and showed function eval() used
     - Exploiting function eval() to execute reverse shell
 - Docker runs as root, copy /bin/bash into volume mounted and change permissions to all
+    - Bash with SUID copied and exploited

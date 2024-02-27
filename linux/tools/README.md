@@ -16,7 +16,7 @@ nmap -v -p- -oN scans/nmap/all_ports $IP
 ## Gobuster
 ```bash
 mkdir -p scans/gobuster
-gobuster dir -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster/medium_list -x php,sh,cgi,txt,html,js,css,py
+gobuster dir -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o scans/gobuster/medium_list -x php,sh,cgi,txt,html,js,css,py
 ```
 
 ## Nikto
